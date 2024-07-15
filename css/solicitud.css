@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(158, 158, 24);
+}
+.control-center{
+    background-color: rgb(217, 213, 213);
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+
+
+}
