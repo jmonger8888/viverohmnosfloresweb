@@ -11,6 +11,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="/css/catalogoproductos.css">
 </head>
 <body>
 
@@ -43,6 +44,30 @@
         </div>
       </nav>
       <h1>Aca va a estar el catalogo de productos</h1>
+      <div class="row">
+        <div class="col-4">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 ">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link1" href="#" onclick="toggleList()">Plantas</a>
+              <div class="list" id="plantaslist">
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link1 ms-3 my-1" href="/html/ornamentales.html">Ornamentales</a>
+                <a class="nav-link1 ms-3 my-1" href="/html/medicinales.html">Medicinales</a>
+                <a class="nav-link1 ms-3 my-1" href="/html/deinterior.html">De Interior</a>
+              </nav>
+            </div>
+              <a class="nav-link1" href="">Macetas</a>
+              <a class="nav-link1" href="">Suministros</a>
+            </nav>
+          </nav>
+        </div>
+      </div>
+
+      <div class="col-8 position-relative">
+        <!-- Aquí se añadirá el símbolo del sol -->
+          <div class="textsol">Simbología</div>
+        <img src="/plantas/simbologia/logodelsol.png" alt="plantadesol" class="solimg" id="solimg">
+  </div>
 
 
 
@@ -52,5 +77,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/catalogoproductos.js"></script>
 </body>
 </html>

@@ -1,0 +1,90 @@
+/* Estilos generales para el contenedor del menú */
+#navbar-example3 {
+    background-color: rgba(130, 43, 43, 0.05); /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start; /* Centrar horizontalmente */
+    justify-content: flex-start; /* Centrar verticalmente */
+    height: 100%; /* Asegura que ocupe toda la altura disponible */
+}
+
+.nav-link1{
+    color: #822B2B;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Colores para los diferentes estados del enlace */
+.nav-link1:link, .nav-link1:visited {
+    color: #822B2B; /* Color del texto */
+}
+/* Color del texto al pasar el ratón y al enfocarse */
+.nav-link1:hover,
+.nav-link1:focus,
+.nav-link1:active {
+    color: #D89F12; /* Color del texto al pasar el ratón, al enfocarse o al activarse */
+    text-decoration: underline; /* Subrayado al pasar el ratón, al enfocarse o al activarse */
+}
+
+/* Clase activa para el enlace */
+.nav-link1.active {
+    color: #D89F12; /* Color del texto cuando el enlace está activo */
+    text-decoration: underline; /* Subrayado cuando el enlace está activo */
+}
+
+/* Estilos para los enlaces secundarios (submenú) */
+.nav-link1.ms-3 {
+    color: #822B2B; /* Color del texto */
+    font-weight: normal; /* Normal */
+    margin-bottom: 10px; /* Menor espaciado inferior para enlaces secundarios */
+}
+
+/* Color del texto al pasar el ratón y al enfocarse */
+.nav-link1.ms-3:hover,
+.nav-link1.ms-3:focus,
+.nav-link1:active {
+    color: #D89F12; /* Color del texto al pasar el ratón, al enfocarse o al activarse */
+    text-decoration: underline; /* Subrayado al pasar el ratón, al enfocarse o al activarse */
+}
+
+.list {
+    background-color: rgba(130, 43, 43, 0.1); /* Fondo con baja opacidad */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%;
+    max-width: 300px;
+    display: none;
+    
+}
+
+/* Clase para el contenedor */
+.col-8.position-relative {
+    position: relative;
+}
+/* Estilo para el símbolo del sol */
+.solimg {
+    position: absolute;
+    top: -200px; /* Ajusta este valor para mover el sol hacia abajo */
+    right: -55%; /* Ajusta este valor según sea necesario para la alineación horizontal */
+    transform: translateX(-10%);
+    width: 500px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+
+}
+
+/* Estilo para el texto encima del sol */
+.textsol {
+    position: absolute;
+    top: -250px; /* Posiciona el texto en la parte superior del contenedor */
+    right: -30%; /* Ajusta este valor según sea necesario para la alineación horizontal */
+    transform: translateX(-50%);
+    color: black;
+    font-weight: bold;
+    font-size: 35px; /* Ajusta el tamaño de la letra según tus necesidades */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
+    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
+}
