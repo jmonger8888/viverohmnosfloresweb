@@ -67,7 +67,7 @@
 /* Estilo para el símbolo del sol */
 .solimg {
     position: absolute;
-    top: -200px; /* Ajusta este valor para mover el sol hacia abajo */
+    top: -230px; /* Ajusta este valor para mover el sol hacia abajo */
     right: -55%; /* Ajusta este valor según sea necesario para la alineación horizontal */
     transform: translateX(-10%);
     width: 500px; /* Ajusta el tamaño según tus necesidades */
@@ -79,7 +79,7 @@
 /* Estilo para el texto encima del sol */
 .textsol {
     position: absolute;
-    top: -250px; /* Posiciona el texto en la parte superior del contenedor */
+    top: -260px; /* Posiciona el texto en la parte superior del contenedor */
     right: -30%; /* Ajusta este valor según sea necesario para la alineación horizontal */
     transform: translateX(-50%);
     color: black;
@@ -87,4 +87,39 @@
     font-size: 35px; /* Ajusta el tamaño de la letra según tus necesidades */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
     pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
+}
+/* Estilo para el símbolo de planta de sol */
+.plantasol {
+    position: absolute;
+    top: -100px; /* Ajusta este valor para mover el sol hacia abajo */
+    right: 0px; /* Ajusta este valor según sea necesario para la alineación horizontal */
+    transform: translateX(-10%);
+    width: 125px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+
+}
+/* Estilo para el símbolo del semi sol */
+.plantasemisol {
+    position: absolute;
+    top: 100px; /* Ajusta este valor para mover el sol hacia abajo */
+    right: -22px; /* Ajusta este valor según sea necesario para la alineación horizontal */
+    transform: translateX(-10%);
+    width: 125px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  
+
+}
+/* Estilo para el símbolo del sin sol */
+.plantassinsol {
+    position: absolute;
+    top: 260px; /* Ajusta este valor para mover el sol hacia abajo */
+    right: -180px; /* Ajusta este valor según sea necesario para la alineación horizontal */
+    transform: translateX(-10%);
+    width: 125px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  
+
 }
