@@ -59,12 +59,15 @@
     display: none;
     
 }
-
-/* Clase para el contenedor */
-.col-8.position-relative {
+/* Clase para el contenedor de las imagenes de simbologia */
+.simbologia-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-/* Estilo para el símbolo del sol */
+/*estilos para la imagen del sol*/
 .solimg {
     position: absolute;
     top: -230px; /* Ajusta este valor para mover el sol hacia abajo */
@@ -76,18 +79,6 @@
 
 }
 
-/* Estilo para el texto encima del sol */
-.textsol {
-    position: absolute;
-    top: -260px; /* Posiciona el texto en la parte superior del contenedor */
-    right: -30%; /* Ajusta este valor según sea necesario para la alineación horizontal */
-    transform: translateX(-50%);
-    color: black;
-    font-weight: bold;
-    font-size: 35px; /* Ajusta el tamaño de la letra según tus necesidades */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
-    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
-}
 /* Estilo para el símbolo de planta de sol */
 .plantasol {
     position: absolute;
@@ -123,3 +114,119 @@
   
 
 }
+
+/* Estilo para el texto encima del sol */
+.textsol {
+    position: absolute;
+    top: -260px; /* Posiciona el texto en la parte superior del contenedor */
+    right: -30%; /* Ajusta este valor según sea necesario para la alineación horizontal */
+    transform: translateX(-50%);
+    color: black;
+    font-weight: bold;
+    font-size: 35px; /* Ajusta el tamaño de la letra según tus necesidades */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
+    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
+}
+
+/* Estilo para el texto encima del sol */
+.textplantasol {
+    position: absolute;
+    top: -65px; /* Posiciona el texto en la parte superior del contenedor */
+    right: 10%; /* Ajusta este valor según sea necesario para la alineación horizontal */
+    transform: translateX(-50%);
+    color: black;
+    font-weight: bold;
+    font-size: 15px; /* Ajusta el tamaño de la letra según tus necesidades */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
+    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
+}
+/* Estilo para el texto encima del sol */
+.textplantasemi {
+    position: absolute;
+    top: 135px; /* Posiciona el texto en la parte superior del contenedor */
+    right: 5%; /* Ajusta este valor según sea necesario para la alineación horizontal */
+    transform: translateX(-50%);
+    color: black;
+    font-weight: bold;
+    font-size: 15px; /* Ajusta el tamaño de la letra según tus necesidades */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
+    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
+}
+/* Estilo para el texto encima del sol */
+.textplantasombra {
+    position: absolute;
+    top: 294px; /* Posiciona el texto en la parte superior del contenedor */
+    right: -9%; /* Ajusta este valor según sea necesario para la alineación horizontal */
+    transform: translateX(-50%);
+    color: black;
+    font-weight: bold;
+    font-size: 15px; /* Ajusta el tamaño de la letra según tus necesidades */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
+    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
+}
+
+.image-group {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .textsol {
+        font-size: 15px; /* Reduce el tamaño del texto */
+        top: 60px; /* Ajusta la posición del texto */
+        right: 70%; /* Ajusta la posición del texto */
+    }
+    
+    .solimg {
+        width: 60%; /* Reduce el tamaño de la imagen */
+        top: 100px; /* Ajusta la posición de la imagen */
+        right: 30%; /* Ajusta la posición de la imagen */
+    }
+    
+    .plantasol {
+        width: 60px; /* Reduce el tamaño de la imagen */
+        top: 150px; /* Ajusta la posición de la imagen */
+        right: 100px;
+    }
+    
+    .plantasemisol {
+        width: 60px; /* Reduce el tamaño de la imagen */
+        top: 250px; /* Ajusta la posición de la imagen */
+        right: 100px;
+    }
+    
+    .plantassinsol {
+        width: 60px; /* Reduce el tamaño de la imagen */
+        top: 340px; /* Ajusta la posición de la imagen */
+        right: 140px;
+    }
+    
+    .textplantasol {
+        font-size: 10px; /* Reduce el tamaño del texto */
+        top: 130px; /* Ajusta la posición del texto */
+        right: 20%;
+    }
+    
+    .textplantasemi {
+        font-size: 10px; /* Reduce el tamaño del texto */
+        top: 230px; /* Ajusta la posición del texto */
+        right: 10%;
+    }
+    
+    .textplantasombra {
+        font-size: 10px; /* Reduce el tamaño del texto */
+        top: 320px; /* Ajusta la posición del texto */
+        right: 20%;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .textsol {
+        font-size: 15px; /* Reduce el tamaño del texto aún más */
+        top: 60px; /* Ajusta la posición del texto */
+        right: 55%;
+    }}
