@@ -73,7 +73,8 @@
     top: -230px; /* Ajusta este valor para mover el sol hacia abajo */
     right: -55%; /* Ajusta este valor según sea necesario para la alineación horizontal */
     transform: translateX(-10%);
-    width: 500px; /* Ajusta el tamaño según tus necesidades */
+    width: 100%;
+    max-width: 500px; /* Ajusta el tamaño según tus necesidades */
     height: auto; /* Mantiene la proporción de la imagen */
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 
@@ -85,7 +86,8 @@
     top: -100px; /* Ajusta este valor para mover el sol hacia abajo */
     right: 0px; /* Ajusta este valor según sea necesario para la alineación horizontal */
     transform: translateX(-10%);
-    width: 125px; /* Ajusta el tamaño según tus necesidades */
+    width: 100%;
+    max-width: 125px; /* Ajusta el tamaño según tus necesidades */
     height: auto; /* Mantiene la proporción de la imagen */
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 
@@ -96,7 +98,8 @@
     top: 100px; /* Ajusta este valor para mover el sol hacia abajo */
     right: -22px; /* Ajusta este valor según sea necesario para la alineación horizontal */
     transform: translateX(-10%);
-    width: 125px; /* Ajusta el tamaño según tus necesidades */
+    width: 100%;
+    max-width: 125px; /* Ajusta el tamaño según tus necesidades */
     height: auto; /* Mantiene la proporción de la imagen */
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
   
@@ -108,7 +111,8 @@
     top: 260px; /* Ajusta este valor para mover el sol hacia abajo */
     right: -180px; /* Ajusta este valor según sea necesario para la alineación horizontal */
     transform: translateX(-10%);
-    width: 125px; /* Ajusta el tamaño según tus necesidades */
+    width: 100%;
+    max-width: 125px; /* Ajusta el tamaño según tus necesidades */
     height: auto; /* Mantiene la proporción de la imagen */
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
   
@@ -170,8 +174,107 @@
     max-width: 200px;
     margin-bottom: 20px;
 }
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 1400px) {
+    .textsol {
+        font-size: 28px;
+        top: -250px;
+        right: -40%;
+    }
+    
+    .solimg {
+        width: 80%;
+        top: -170px;
+        right: -55%;
+    }
+    
+    .plantasol {
+        width: 90px;
+        top: -40px;
+        right: 12%;
+    }
+    .plantasemisol{
+        width: 90px;
+        top: 150px;
+        right: 10%;
 
+    }
+    .plantassinsol{
+        width: 90px;
+        top: 330px;
+        right: -6%;
 
+    }
+    
+    .textplantasol{
+        font-size: 12.5px; /* Reduce el tamaño del texto */
+        top: -70px; /* Ajusta la posición del texto */
+        right: 10%; /* Ajusta la posición del texto */
+    }
+    .textplantasemi {
+        font-size: 12.5px; /* Reduce el tamaño del texto */
+        top: 115px; /* Ajusta la posición del texto */
+        right: 6%; /* Ajusta la posición del texto */
+
+    }
+    .textplantasombra {
+        font-size: 12.5px; /* Reduce el tamaño del texto */
+        top: 300px; /* Ajusta la posición del texto */
+        right: -5%; /* Ajusta la posición del texto */
+
+    }
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 1200px) {
+    .textsol {
+        font-size: 22px;
+        top: 50px;
+        right: 55%;
+    }
+    
+    .solimg {
+        width: 70%;
+        top: 100px;
+        right: 15%;
+    }
+    
+    .plantasol {
+        width: 80px;
+        top: 150px;
+        right: 2%;
+    }
+    .plantasemisol{
+        width: 80px;
+        top: 290px;
+        right: 2%;
+
+    }
+    .plantassinsol{
+        width: 80px;
+        top: 420px;
+        right: 18%;
+
+    }
+    
+    .textplantasol{
+        font-size: 10px; /* Reduce el tamaño del texto */
+        top: 120px; /* Ajusta la posición del texto */
+        right: 10%; /* Ajusta la posición del texto */
+    }
+    .textplantasemi {
+        font-size: 10px; /* Reduce el tamaño del texto */
+        top: 255px; /* Ajusta la posición del texto */
+        right: 0%; /* Ajusta la posición del texto */
+
+    }
+    .textplantasombra {
+        font-size: 10px; /* Reduce el tamaño del texto */
+        top: 395px; /* Ajusta la posición del texto */
+        right: 10%; /* Ajusta la posición del texto */
+
+    }
+}
 /* Media Queries para pantallas más pequeñas */
 @media (max-width: 768px) {
     .textsol {
@@ -229,4 +332,19 @@
         font-size: 15px; /* Reduce el tamaño del texto aún más */
         top: 60px; /* Ajusta la posición del texto */
         right: 55%;
-    }}
+    }
+    .solimg {
+        width: 70%;
+        top: -180px;
+        right: -10%;
+    }
+    
+    .plantasol, .plantasemisol, .plantassinsol {
+        width: 60%;
+        max-width: 70px;
+    }
+    
+    .textplantasol, .textplantasemi, .textplantasombra {
+        font-size: 10px;
+    }
+}
