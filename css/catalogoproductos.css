@@ -1,6 +1,6 @@
 /* Estilos generales para el contenedor del menú */
 #navbar-example3 {
-    background-color: rgba(130, 43, 43, 0.05); /* Color de fondo */
+    background-color: rgba(130, 43, 43, 0.3); /* Color de fondo */
     padding: 20px; /* Espaciado interno */
     display: flex;
     border-radius: 10px;
@@ -51,7 +51,7 @@
 }
 
 .list {
-    background-color: rgba(130, 43, 43, 0.1); /* Fondo con baja opacidad */
+    background-color: rgba(130, 43, 43, 0.4); /* Fondo con baja opacidad */
     padding: 10px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
     width: 100%;
@@ -174,6 +174,61 @@
     max-width: 200px;
     margin-bottom: 20px;
 }
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el contenedor del body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el main */
+main {
+    flex: 1;
+}
+/*estilos para parfe de abajo de la hoja*/
+/* Estilo para el contenedor del footer */
+.footer {
+    width: 100%;
+    background-color: rgba(67, 148, 99, 0.50); /* Cambia el color de fondo según tu preferencia */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
+    margin-top: 400px;
+}
+
+/* Estilo para el contenido del footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el logo del footer */
+#footerlogo {
+    max-width: 140px; /* Ajusta el tamaño máximo del logo */
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilo para el texto del footer */
+.footer-text {
+    font-size: 14px;
+    color: #333; /* Cambia el color del texto según tu preferencia */
+    margin: 0;
+}
+#navinicio.custom-nav-color{
+    background-color: rgba(216, 159, 18, 0.5)!important; /* Color con opacidad */
+}
+
 /* Media Queries para pantallas más pequeñas */
 @media (max-width: 1400px) {
     .textsol {
