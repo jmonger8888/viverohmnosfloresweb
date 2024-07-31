@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(158, 158, 24);
+    background-color: rgba(158, 158, 24, 0.5);
 }
 .control-center{
     background-color: rgb(217, 213, 213);
@@ -9,4 +9,7 @@ body{
     border-radius: 8px;
 
 
+}
+#navinicio{
+    background-color: rgba(216, 159, 18, 0.5)!important; /* Color con opacidad */
 }

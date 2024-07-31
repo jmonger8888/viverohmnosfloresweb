@@ -225,7 +225,7 @@ main {
     color: #333; /* Cambia el color del texto según tu preferencia */
     margin: 0;
 }
-#navinicio.custom-nav-color{
+#navinicio{
     background-color: rgba(216, 159, 18, 0.5)!important; /* Color con opacidad */
 }
 
