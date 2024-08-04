@@ -33,3 +33,11 @@
     color: #333; /* Cambia el color del texto según tu preferencia */
     margin: 0;
 }
+
+.btnnavigation{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px; /* Espacio antes del pie de página */
+}
