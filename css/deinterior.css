@@ -9,7 +9,7 @@
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
-    margin-top: 400px;
+    margin-top: 20px;
 }
 
 /* Estilo para el contenido del footer */
@@ -32,4 +32,15 @@
     font-size: 14px;
     color: #333; /* Cambia el color del texto según tu preferencia */
     margin: 0;
+}
+
+.btnnavigation .btn-primary {
+    background-color: #822B2B; /* Color con opacidad */
+    border-color: #822B2B; /* Asegura que el borde tenga el mismo color */
+    color: white; /* Color del texto */
+}
+
+.btnnavigation .btn-primary:hover {
+    background-color: #822B2B; /* Color sólido al pasar el mouse */
+    border-color: #822B2B; /* Asegura que el borde tenga el mismo color */
 }
