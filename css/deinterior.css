@@ -34,6 +34,14 @@
     margin: 0;
 }
 
+.btnnavigation{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px; /* Espacio antes del pie de página */
+}
+
 .btnnavigation .btn-primary {
     background-color: #822B2B; /* Color con opacidad */
     border-color: #822B2B; /* Asegura que el borde tenga el mismo color */
