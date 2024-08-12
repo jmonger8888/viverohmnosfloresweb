@@ -34,6 +34,9 @@ Swal.fire({
     icon: 'success',
     confirmButtonColor: '#3085d6',
     confirmButtonText: 'Aceptar'
+}).then(() => {
+    // Activar la animación después de que el usuario presiona "Aceptar"
+    activarAnimacionCarrito();
 });
 }
 
@@ -50,6 +53,18 @@ function cargarCarrito() {
     }
 }
 
-// Llamar a cargarCarrito al inicio
-cargarCarrito();
+// Función para activar animación si hay productos en el carrito
+function activarAnimacionCarrito() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const logoCarrito = document.querySelector('.navbar-brand img');
 
+    if (carrito.length > 0) {
+        logoCarrito.classList.add('vibrar'); // Añadir la clase de animación
+    } else {
+        logoCarrito.classList.remove('vibrar');
+        logoCarrito.classList.remove('agrandar'); // Si prefieres usar otra animación
+    }
+}
+
+// Ejecuta la función cuando se cargue la página
+document.addEventListener('DOMContentLoaded', activarAnimacionCarrito);
