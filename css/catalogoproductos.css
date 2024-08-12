@@ -226,7 +226,7 @@ main {
     margin: 0;
 }
 #navinicio{
-    background-color: rgba(216, 159, 18, 0.5)!important; /* Color con opacidad */
+    background-color: rgba(216, 159, 18, 0.75)!important; /* Color con opacidad */
 }
 
 /* Media Queries para pantallas más pequeñas */

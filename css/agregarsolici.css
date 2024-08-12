@@ -1,6 +1,4 @@
-body{
-    background-color: rgba(158, 158, 24, 0.5);
-}
+
 .control-center{
     background-color: rgb(217, 213, 213);
     width: 600px;
@@ -11,7 +9,7 @@ body{
 
 }
 #navinicio{
-    background-color: rgba(216, 159, 18, 0.5)!important; /* Color con opacidad */
+    background-color: rgba(216, 159, 18, 0.75)!important; /* Color con opacidad */
 }
 
 /*estilos para parfe de abajo de la hoja*/
@@ -22,7 +20,7 @@ body{
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
-    margin-top: 400px;
+    margin-top: 50px;
 }
 
 /* Estilo para el contenido del footer */
