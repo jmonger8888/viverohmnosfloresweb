@@ -1,0 +1,65 @@
+#navinicio{
+    background-color: rgba(216, 159, 18, 0.5)!important; /* Color con opacidad */
+}
+/*estilos para parfe de abajo de la hoja*/
+/* Estilo para el contenedor del footer */
+.footer {
+    width: 100%;
+    background-color: rgba(67, 148, 99, 0.50); /* Cambia el color de fondo según tu preferencia */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
+    margin-top: 20px;
+}
+
+/* Estilo para el contenido del footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el logo del footer */
+#footerlogo {
+    max-width: 140px; /* Ajusta el tamaño máximo del logo */
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilo para el texto del footer */
+.footer-text {
+    font-size: 14px;
+    color: #333; /* Cambia el color del texto según tu preferencia */
+    margin: 0;
+}
+
+.btnnavigation{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px; /* Espacio antes del pie de página */
+}
+
+.btnnavigation .btn-primary {
+    background-color: #822B2B; /* Color con opacidad */
+    border-color: #822B2B; /* Asegura que el borde tenga el mismo color */
+    color: white; /* Color del texto */
+}
+
+.btnnavigation .btn-primary:hover {
+    background-color: #D89F12; /* Color sólido al pasar el mouse */
+    border-color: #822B2B; /* Asegura que el borde tenga el mismo color */
+}
+.btn-custom {
+    background-color: #D89F12; /* Cambia esto al color que prefieras */
+    border-color: #D89F12; /* Cambia esto al color que prefieras */
+    color: black; /* Color del texto */
+}
+
+.btn-custom:hover {
+    background-color: #439463; /* Color al pasar el mouse, más oscuro por ejemplo */
+    border-color: #D89F12; /* Bordes en el mismo color */
+    color: white; /* Color del texto */
+}
