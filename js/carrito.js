@@ -2,25 +2,28 @@
 let carrito = [];
 
 // Función para agregar productos al carrito
-function agregarAlCarrito(imagen, nombreProducto, nombreCientifico, plantaDe, presentacion) {
+function agregarAlCarrito(imagen, nombreProducto, nombreCientifico = '', plantaDe = '', presentacion = '', identificador = '', descripcion = '') {
+    cargarCarrito(); // Asegúrate de cargar el carrito actualizado
     const productoExistente = carrito.find(producto => 
         producto.nombreProducto === nombreProducto &&
         producto.nombreCientifico === nombreCientifico &&
         producto.plantaDe === plantaDe &&
-        producto.presentacion === presentacion
+        producto.presentacion === presentacion &&
+        producto.identificador === identificador &&
+        producto.descripcion === descripcion
     );
 
     if (productoExistente) {
-        // Si el producto ya está en el carrito, incrementa la cantidad
         productoExistente.cantidad += 1;
     } else {
-        // Si el producto no está en el carrito, agrégalo con cantidad = 1
         const producto = {
             imagen,
             nombreProducto,
             nombreCientifico,
             plantaDe,
             presentacion,
+            identificador,
+            descripcion,
             cantidad: 1,
         };
         carrito.push(producto);
@@ -28,16 +31,15 @@ function agregarAlCarrito(imagen, nombreProducto, nombreCientifico, plantaDe, pr
     
     guardarCarrito();
     // Mostrar alerta de confirmación
-Swal.fire({
-    title: 'Producto agregado',
-    text: `${nombreProducto} ha sido añadido al carrito.`,
-    icon: 'success',
-    confirmButtonColor: '#3085d6',
-    confirmButtonText: 'Aceptar'
-}).then(() => {
-    // Activar la animación después de que el usuario presiona "Aceptar"
-    activarAnimacionCarrito();
-});
+    Swal.fire({
+        title: 'Producto agregado',
+        text: `${nombreProducto} ha sido añadido al carrito.`,
+        icon: 'success',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Aceptar'
+    }).then(() => {
+        activarAnimacionCarrito();
+    });
 }
 
 // Guardar el carrito en el almacenamiento local del navegador
@@ -50,8 +52,14 @@ function cargarCarrito() {
     const carritoGuardado = localStorage.getItem('carrito');
     if (carritoGuardado) {
         carrito = JSON.parse(carritoGuardado);
+    } else {
+        carrito = [];
     }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    cargarCarrito();
+    //mostrarCarrito();
+});
 
 // Función para activar animación si hay productos en el carrito
 function activarAnimacionCarrito() {
