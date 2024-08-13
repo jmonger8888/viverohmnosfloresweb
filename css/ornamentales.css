@@ -64,4 +64,37 @@
     border-color: #D89F12; /* Bordes en el mismo color */
     color: white; /* Color del texto */
 }
+.custom-search-input {
+    border-radius: 20px 0 0 20px;
+    border: 3px solid #822B2B;
+    color: #822B2B;
+    font-size: 16px;
+    height: 36px;
+}
 
+.custom-search-input::placeholder {
+    color: #822B2B;
+    opacity: 0.7;
+}
+
+.custom-search-icon {
+    background-color: #822B2B;
+    border-radius: 0 20px 20px 0;
+    border: 2px solid #822B2B;
+    color: white;
+    padding: 6px 10px;
+    height: 36px; /* Asegura que el icono tenga la misma altura que el input */
+}
+
+.custom-search-icon i {
+    font-size: 30px;
+}
+
+/* Ajuste de tamaño del icono dentro del input group */
+.input-group .input-group-append {
+    margin-left: -5px;
+}
+
+.input-group .input-group-append .input-group-text {
+    padding: 6px 10px;
+}

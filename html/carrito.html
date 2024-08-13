@@ -48,7 +48,10 @@
       <div class="container d-flex flex-column" style="min-height: 100vh;">
         <div id="carrito-container" class="flex-grow-1"></div>
         <div class="btnnavigation">
-            <button class="btn btn-primary" onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <a href="#" id="whatsappLink" onclick="enviarCotizacionWhatsApp()">
+              <img src="/plantas/simbologia/whatsapp.png" alt="WhatsApp" style="width: 36px; height: 36px;">
+          </a>
+          <button class="btn btn-primary" onclick="vaciarCarrito()">Vaciar Carrito</button>
         </div>
     </div>
     
@@ -69,6 +72,7 @@
     ></script>
     <script src="/js/carrito.js"></script>
     <script src="/js/mostrarcarrito.js"></script>
+    <script src="/js/generarcotiza.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
