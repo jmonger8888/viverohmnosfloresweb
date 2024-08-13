@@ -1,13 +1,38 @@
-
-.control-center{
-    background-color: rgb(217, 213, 213);
-    width: 600px;
-    margin: 0 auto;
+.form-container {
+    background-color: #F7F5F7; /* Color gris claro */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin-top: 20px;
     padding: 20px;
-    border-radius: 8px;
-
-
-}
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  .form-label {
+    color: #822B2B; /* Color de las etiquetas */
+  }
+  
+  .form-control {
+    border: 1px solid #822B2B; /* Bordes */
+  border-radius: 5px;
+  padding: 10px;
+  }
+  
+  .btn-custom {
+    background-color: #439463;
+    color: white;
+    border-color: #439463;
+    border-radius: 5px; /* Esquinas redondeadas para el botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    padding: 5px 15px; /* Espaciado interno del botón */
+    display: block;
+    margin: 20px auto 0; /* Centrando el botón */
+    width: auto; /* Ajusta el ancho del botón automáticamente */
+  }
+  .btn-custom:hover {
+    background-color: #D89F12; /* Color al pasar el cursor */
+    border-color: #D89F12;
+    color: white;
+  }
+  
 #navinicio{
     background-color: rgba(216, 159, 18, 0.75)!important; /* Color con opacidad */
 }

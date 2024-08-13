@@ -9,7 +9,7 @@
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
-    margin-top: 400px;
+    margin-top: 20px;
 }
 
 /* Estilo para el contenido del footer */
@@ -27,3 +27,14 @@
     margin-bottom: 10px; /* Espacio entre el logo y el texto */
 }
 
+.btn-primary {
+    background-color: #822B2B; /* Cambia el color de fondo */
+    border-color: #822B2B; /* Cambia el color del borde */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #D89F12; /* Cambia el color al hacer hover */
+    border-color: #822B2B; /* Cambia el color del borde al hacer hover */
+    color: white;
+}
