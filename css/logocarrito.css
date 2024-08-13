@@ -7,7 +7,7 @@
 }
 
 .vibrar {
-    animation: vibrar 0.8s linear infinite;
+    animation: vibrar 1s linear;
 }
 
 @keyframes agrandar {
@@ -16,5 +16,27 @@
 }
 
 .agrandar {
-    animation: agrandar 0.5s ease-in-out infinite;
+    animation: agrandar 0.5s ease-in-out;
 }
+
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.cart-count {
+    position: absolute;
+    top: 5px; /* Ajusta esta propiedad según sea necesario */
+    right: 85px; /* Cambia esta propiedad para mover el contador hacia la izquierda */
+    background-color: #822B2B; /* Cambia el color si es necesario */
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+

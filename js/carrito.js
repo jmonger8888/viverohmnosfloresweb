@@ -39,6 +39,7 @@ function agregarAlCarrito(imagen, nombreProducto, nombreCientifico = '', plantaD
         confirmButtonText: 'Aceptar'
     }).then(() => {
         activarAnimacionCarrito();
+        actualizarContadorCarrito();
     });
 }
 
@@ -56,23 +57,34 @@ function cargarCarrito() {
         carrito = [];
     }
 }
-document.addEventListener('DOMContentLoaded', function() {
-    cargarCarrito();
-    //mostrarCarrito();
-});
+
+// Actualiza el contador de productos en el carrito
+function actualizarContadorCarrito() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const productCount = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+    document.getElementById("productCount").textContent = productCount;
+}
 
 // Función para activar animación si hay productos en el carrito
 function activarAnimacionCarrito() {
-    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    const logoCarrito = document.querySelector('.navbar-brand img');
-
+    const carritoLogo = document.querySelector('.navbar-brand img');
+    
     if (carrito.length > 0) {
-        logoCarrito.classList.add('vibrar'); // Añadir la clase de animación
+        carritoLogo.classList.add("vibrar");
+        setTimeout(() => {
+            carritoLogo.classList.remove("vibrar");
+        }, 1000); // Duración de la animación vibrar
+
+        // Repite la animación cada 1 minuto
+        setTimeout(activarAnimacionCarrito, 30000); // 60000ms = 1 minuto
     } else {
-        logoCarrito.classList.remove('vibrar');
-        logoCarrito.classList.remove('agrandar'); // Si prefieres usar otra animación
+        carritoLogo.classList.remove("vibrar");
     }
 }
 
 // Ejecuta la función cuando se cargue la página
-document.addEventListener('DOMContentLoaded', activarAnimacionCarrito);
+document.addEventListener('DOMContentLoaded', function() {
+    cargarCarrito();
+    actualizarContadorCarrito();
+    activarAnimacionCarrito();
+});
