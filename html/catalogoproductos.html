@@ -53,50 +53,55 @@
         </div>
       </nav>
 
-      <main>
       <h1>Aca va a estar el catalogo de productos</h1>
-      <div class="row">
-        <div class="col-4">
-          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 ">
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link1" href="#" onclick="toggleList()">Plantas</a>
-              <div class="list" id="plantaslist">
-              <nav class="nav nav-pills flex-column">
-                <a class="nav-link1 ms-3 my-1" href="/html/ornamentales.html">Ornamentales</a>
-                <a class="nav-link1 ms-3 my-1" href="/html/medicinales.html">Medicinales</a>
-                <a class="nav-link1 ms-3 my-1" href="/html/deinterior.html">De Interior</a>
-              </nav>
+      <div class="container">
+        <div class="row justify-content-center">
+            <!-- Contenedor izquierdo: Lista -->
+            <div class="col-md-4 mx-2 bg-list">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link1" href="#" onclick="toggleList()">Plantas</a>
+                        <div class="list" id="plantaslist">
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link1 ms-3 my-1" href="/html/ornamentales.html">Ornamentales 🌺</a>
+                                <a class="nav-link1 ms-3 my-1" href="/html/medicinales.html">Medicinales 💊</a>
+                                <a class="nav-link1 ms-3 my-1" href="/html/deinterior.html">De Interior 🏠</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link1" href="/html/macetas.html">Macetas</a>
+                        <a class="nav-link1" href="/html/suministros.html">Suministros</a>
+                    </nav>
+                </nav>
             </div>
-              <a class="nav-link1" href="/html/macetas.html">Macetas</a>
-              <a class="nav-link1" href="/html/suministros.html">Suministros</a>
-            </nav>
-          </nav>
-        </div>
+    
+            <!-- Contenedor derecho: Párrafo con simbología -->
+            <div class="col-md-4 mx-2">
+                <div class="p-4 bg-simbologia rounded">
+                    <h3>Simbología y Significado</h3>
+                    <p>
+                        🌺 <strong>Plantas Ornamentales:</strong> Perfectas para decorar cualquier espacio con su belleza natural.<br>
+                        💊 <strong>Plantas Medicinales:</strong> Útiles para el bienestar y la salud, con propiedades curativas.<br>
+                        🏠 <strong>Plantas de Interior:</strong> Ideales para embellecer y purificar el aire dentro de tu hogar.<br>
+                        🌿 <strong>Macetas y Suministros:</strong> Encuentra todo lo necesario para el cuidado de tus plantas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contenedor derecho: Simbología de exposición al sol -->
+    <div class="col-md-4 mx-2">
+      <div class="p-4 bg-exposicion rounded">
+          <h3>Exposición al Sol</h3>
+          <p>
+              🌞 <strong>Plantas de Sol:</strong> Necesitan luz solar directa la mayor parte del día.<br>
+              🌒 <strong>Plantas de Semi Sombra:</strong> Prefieren luz filtrada o parcial, evitando el sol directo.<br>
+              🌑 <strong>Plantas de Sombra:</strong> Crecen mejor en áreas con poca luz o luz indirecta.
+          </p>
       </div>
-
-      <div class="col-12 col-md-8 position-relative simbologia-container">
-        <!-- Aquí se añadirá el símbolo del sol -->
-          <div class="textsol">Simbología</div>
-          <img src="/plantas/simbologia/logodelsol.png" alt="plantadesol" class="solimg" id="solimg">
-          <div class="plant-container">
-
-          <div class="image-group">
-          <img src="/plantas/simbologia/plantasol.png" alt="plantadesol" class="plantasol" id="plantadesol">
-          <div class="textplantasol">Planta de Sol</div>
-          </div>
-
-          <div class="image-group">
-            <img src="/plantas/simbologia/plantadesemisol.png" alt="plantasemisol" class="plantasemisol" id="plantasemisol">
-          <div class="textplantasemi">Planta de semi sombra</div>
-        </div>
-
-        <div class="image-group">
-          <img src="/plantas/simbologia/plantassinsol.png" alt="plantassinsol" class="plantassinsol" id="plantassinsol">
-          <div class="textplantasombra">Planta de sombra</div>
-        </div>
   </div>
-</div>
-</main>
+        </div>
+    </div>
+
+      
 
 <footer class="footer">
     <div class="footer-content">

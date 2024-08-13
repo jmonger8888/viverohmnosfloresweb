@@ -1,6 +1,6 @@
 /* Estilos generales para el contenedor del menú */
 #navbar-example3 {
-    background-color: rgba(130, 43, 43, 0.3); /* Color de fondo */
+    background-color: rgba(67, 148, 99, 0.5); /* Color de fondo */
     padding: 20px; /* Espaciado interno */
     display: flex;
     border-radius: 10px;
@@ -11,16 +11,18 @@
 }
 
 .nav-link1{
-    color: #822B2B;
+    color: #000000; /* Cambiado a negro */
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-decoration: none;
     cursor: pointer;
 }
+
 /* Colores para los diferentes estados del enlace */
 .nav-link1:link, .nav-link1:visited {
-    color: #822B2B; /* Color del texto */
+    color: #000000; /* Cambiado a negro */
 }
+
 /* Color del texto al pasar el ratón y al enfocarse */
 .nav-link1:hover,
 .nav-link1:focus,
@@ -37,7 +39,7 @@
 
 /* Estilos para los enlaces secundarios (submenú) */
 .nav-link1.ms-3 {
-    color: #822B2B; /* Color del texto */
+    color: white; /* Color del texto */
     font-weight: normal; /* Normal */
     margin-bottom: 10px; /* Menor espaciado inferior para enlaces secundarios */
 }
@@ -51,148 +53,21 @@
 }
 
 .list {
-    background-color: rgba(130, 43, 43, 0.4); /* Fondo con baja opacidad */
     padding: 10px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
     width: 100%;
     max-width: 300px;
     display: none;
-    
-}
-/* Clase para el contenedor de las imagenes de simbologia */
-.simbologia-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-/*estilos para la imagen del sol*/
-.solimg {
-    position: absolute;
-    top: -230px; /* Ajusta este valor para mover el sol hacia abajo */
-    right: -55%; /* Ajusta este valor según sea necesario para la alineación horizontal */
-    transform: translateX(-10%);
-    width: 100%;
-    max-width: 500px; /* Ajusta el tamaño según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-
+    margin-top: 5px; /* Reduce la distancia entre "Plantas" y la lista */
+    margin-bottom: 20px; /* Aumenta la distancia entre la lista y "Macetas" */
 }
 
-/* Estilo para el símbolo de planta de sol */
-.plantasol {
-    position: absolute;
-    top: -100px; /* Ajusta este valor para mover el sol hacia abajo */
-    right: 0px; /* Ajusta este valor según sea necesario para la alineación horizontal */
-    transform: translateX(-10%);
-    width: 100%;
-    max-width: 125px; /* Ajusta el tamaño según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-
-}
-/* Estilo para el símbolo del semi sol */
-.plantasemisol {
-    position: absolute;
-    top: 100px; /* Ajusta este valor para mover el sol hacia abajo */
-    right: -22px; /* Ajusta este valor según sea necesario para la alineación horizontal */
-    transform: translateX(-10%);
-    width: 100%;
-    max-width: 125px; /* Ajusta el tamaño según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-  
-
-}
-/* Estilo para el símbolo del sin sol */
-.plantassinsol {
-    position: absolute;
-    top: 260px; /* Ajusta este valor para mover el sol hacia abajo */
-    right: -180px; /* Ajusta este valor según sea necesario para la alineación horizontal */
-    transform: translateX(-10%);
-    width: 100%;
-    max-width: 125px; /* Ajusta el tamaño según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-  
-
-}
-
-/* Estilo para el texto encima del sol */
-.textsol {
-    position: absolute;
-    top: -260px; /* Posiciona el texto en la parte superior del contenedor */
-    right: -30%; /* Ajusta este valor según sea necesario para la alineación horizontal */
-    transform: translateX(-50%);
-    color: black;
-    font-weight: bold;
-    font-size: 35px; /* Ajusta el tamaño de la letra según tus necesidades */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
-    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
-}
-
-/* Estilo para el texto encima del sol */
-.textplantasol {
-    position: absolute;
-    top: -65px; /* Posiciona el texto en la parte superior del contenedor */
-    right: 10%; /* Ajusta este valor según sea necesario para la alineación horizontal */
-    transform: translateX(-50%);
-    color: black;
-    font-weight: bold;
-    font-size: 15px; /* Ajusta el tamaño de la letra según tus necesidades */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
-    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
-}
-/* Estilo para el texto encima del sol */
-.textplantasemi {
-    position: absolute;
-    top: 135px; /* Posiciona el texto en la parte superior del contenedor */
-    right: 5%; /* Ajusta este valor según sea necesario para la alineación horizontal */
-    transform: translateX(-50%);
-    color: black;
-    font-weight: bold;
-    font-size: 15px; /* Ajusta el tamaño de la letra según tus necesidades */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
-    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
-}
-/* Estilo para el texto encima del sol */
-.textplantasombra {
-    position: absolute;
-    top: 294px; /* Posiciona el texto en la parte superior del contenedor */
-    right: -9%; /* Ajusta este valor según sea necesario para la alineación horizontal */
-    transform: translateX(-50%);
-    color: black;
-    font-weight: bold;
-    font-size: 15px; /* Ajusta el tamaño de la letra según tus necesidades */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto para mejor legibilidad */
-    pointer-events: none; /* Evita que el texto interfiera con los eventos del ratón en la imagen */
-}
-
-.image-group {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 20px;
-}
-/* General reset and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo para el contenedor del body */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-}
-
-/* Estilo para el main */
-main {
-    flex: 1;
-}
 /*estilos para parfe de abajo de la hoja*/
 /* Estilo para el contenedor del footer */
 .footer {
@@ -201,7 +76,7 @@ main {
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
-    margin-top: 400px;
+    margin-top: 20px;
 }
 
 /* Estilo para el contenido del footer */
@@ -225,306 +100,48 @@ main {
     color: #333; /* Cambia el color del texto según tu preferencia */
     margin: 0;
 }
-#navinicio{
-    background-color: rgba(216, 159, 18, 0.75)!important; /* Color con opacidad */
+
+#navinicio {
+    background-color: rgba(216, 159, 18, 0.75) !important; /* Color con opacidad */
 }
 
-/* Media Queries para pantallas más pequeñas */
-@media (max-width: 1400px) {
-    .textsol {
-        font-size: 28px;
-        top: -250px;
-        right: -40%;
-    }
-    
-    .solimg {
-        width: 80%;
-        top: -170px;
-        right: -55%;
-    }
-    
-    .plantasol {
-        width: 90px;
-        top: -40px;
-        right: 12%;
-    }
-    .plantasemisol{
-        width: 90px;
-        top: 150px;
-        right: 10%;
-
-    }
-    .plantassinsol{
-        width: 90px;
-        top: 330px;
-        right: -6%;
-
-    }
-    
-    .textplantasol{
-        font-size: 12.5px; /* Reduce el tamaño del texto */
-        top: -70px; /* Ajusta la posición del texto */
-        right: 10%; /* Ajusta la posición del texto */
-    }
-    .textplantasemi {
-        font-size: 12.5px; /* Reduce el tamaño del texto */
-        top: 115px; /* Ajusta la posición del texto */
-        right: 6%; /* Ajusta la posición del texto */
-
-    }
-    .textplantasombra {
-        font-size: 12.5px; /* Reduce el tamaño del texto */
-        top: 300px; /* Ajusta la posición del texto */
-        right: -5%; /* Ajusta la posición del texto */
-
-    }
+/* Estilo para el contenedor del texto */
+.col-md-4 .bg-light {
+    background-color: rgba(67, 148, 99, 0.1); /* Color de fondo suave */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Media Queries para pantallas más pequeñas */
-@media (max-width: 1000px) {
-    .textsol {
-        font-size: 22px;
-        top: 50px;
-        right: 55%;
-    }
-    
-    .solimg {
-        width: 70%;
-        top: 100px;
-        right: 15%;
-    }
-    
-    .plantasol {
-        width: 80px;
-        top: 180px;
-        right: 4%;
-    }
-    .plantasemisol{
-        width: 80px;
-        top: 310px;
-        right: 4%;
-
-    }
-    .plantassinsol{
-        width: 80px;
-        top: 460px;
-        right: 18%;
-
-    }
-    
-    .textplantasol{
-        font-size: 10px; /* Reduce el tamaño del texto */
-        top: 150px; /* Ajusta la posición del texto */
-        right: 4%; /* Ajusta la posición del texto */
-    }
-    .textplantasemi {
-        font-size: 10px; /* Reduce el tamaño del texto */
-        top: 285px; /* Ajusta la posición del texto */
-        right: 0%; /* Ajusta la posición del texto */
-
-    }
-    .textplantasombra {
-        font-size: 10px; /* Reduce el tamaño del texto */
-        top: 430px; /* Ajusta la posición del texto */
-        right: 6%; /* Ajusta la posición del texto */
-
-    }
-}
-/* Media Queries para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .textsol {
-        font-size: 15px; /* Reduce el tamaño del texto */
-        top: 60px; /* Ajusta la posición del texto */
-        right: 70%; /* Ajusta la posición del texto */
-    }
-    
-    .solimg {
-        width: 60%; /* Reduce el tamaño de la imagen */
-        top: 100px; /* Ajusta la posición de la imagen */
-        right: 30%; /* Ajusta la posición de la imagen */
-    }
-    
-    .plantasol {
-        width: 60px; /* Reduce el tamaño de la imagen */
-        top: 150px; /* Ajusta la posición de la imagen */
-        right: 100px;
-    }
-    
-    .plantasemisol {
-        width: 60px; /* Reduce el tamaño de la imagen */
-        top: 250px; /* Ajusta la posición de la imagen */
-        right: 100px;
-    }
-    
-    .plantassinsol {
-        width: 60px; /* Reduce el tamaño de la imagen */
-        top: 340px; /* Ajusta la posición de la imagen */
-        right: 140px;
-    }
-    
-    .textplantasol {
-        font-size: 10px; /* Reduce el tamaño del texto */
-        top: 130px; /* Ajusta la posición del texto */
-        right: 20%;
-    }
-    
-    .textplantasemi {
-        font-size: 10px; /* Reduce el tamaño del texto */
-        top: 230px; /* Ajusta la posición del texto */
-        right: 10%;
-    }
-    
-    .textplantasombra {
-        font-size: 10px; /* Reduce el tamaño del texto */
-        top: 320px; /* Ajusta la posición del texto */
-        right: 20%;
-    }
-}
-/* Media Queries para pantallas muy pequeñas (teléfonos) */
-@media (max-width: 550px) {
-    .textsol {
-        font-size: 12px; /* Reduce el tamaño del texto aún más */
-        top: 50px; /* Ajusta la posición del texto */
-        right: 60%;
-    }
-    .solimg {
-        width: 50%;
-        top: 100px;
-        right: 35%;
-    }
-    
-    .plantasol {
-        width: 50px; /* Reduce el tamaño de la imagen */
-        top: 120px; /* Ajusta la posición de la imagen */
-        right: 110px;
-    }
-    .plantasemisol{
-        width: 50px; /* Reduce el tamaño de la imagen */
-        top: 205px; /* Ajusta la posición de la imagen */
-        right: 95px;
-
-    }
-    .plantassinsol{
-        width: 50px; /* Reduce el tamaño de la imagen */
-        top: 290px; /* Ajusta la posición de la imagen */
-        right: 145px;
-
-    }
-    
-    .textplantasol {
-        font-size: 8px; /* Reduce el tamaño del texto */
-        top: 100px; /* Ajusta la posición del texto */
-        right: 30%;
-    }
-    .textplantasemi{
-        font-size: 8px; /* Reduce el tamaño del texto */
-        top: 185px; /* Ajusta la posición del texto */
-        right: 10%;
-
-    }
-    .textplantasombra{
-        font-size: 8px; /* Reduce el tamaño del texto */
-        top: 270px; /* Ajusta la posición del texto */
-        right: 20%;
-
-    }
+/* Estilos para el contenedor de Simbología y Significado */
+.bg-simbologia {
+    background-color: rgba(216, 159, 18, 0.5); /* Color personalizado con opacidad */
 }
 
-/* Media Queries para pantallas muy pequeñas (teléfonos) */
-@media (max-width: 380px) {
-    .textsol {
-        font-size: 12px; /* Reduce el tamaño del texto aún más */
-        top: 50px; /* Ajusta la posición del texto */
-        right: 55%;
-    }
-    .solimg {
-        width: 50%;
-        top: 100px;
-        right: 30%;
-    }
-    
-    .plantasol {
-        width: 50px; /* Reduce el tamaño de la imagen */
-        top: 110px; /* Ajusta la posición de la imagen */
-        right: 70px;
-    }
-    .plantasemisol{
-        width: 50px; /* Reduce el tamaño de la imagen */
-        top: 190px; /* Ajusta la posición de la imagen */
-        right: 55px;
-
-    }
-    .plantassinsol{
-        width: 50px; /* Reduce el tamaño de la imagen */
-        top: 250px; /* Ajusta la posición de la imagen */
-        right: 95px;
-
-    }
-    
-    .textplantasol {
-        font-size: 8px; /* Reduce el tamaño del texto */
-        top: 90px; /* Ajusta la posición del texto */
-        right: 20%;
-    }
-    .textplantasemi{
-        font-size: 8px; /* Reduce el tamaño del texto */
-        top: 170px; /* Ajusta la posición del texto */
-        right: 0%;
-
-    }
-    .textplantasombra{
-        font-size: 8px; /* Reduce el tamaño del texto */
-        top: 240px; /* Ajusta la posición del texto */
-        right: 15%;
-
-    }
+/* Estilos para el contenedor de Exposición al Sol */
+.bg-exposicion {
+    background-color: rgba(130, 43, 43, 0.5); /* Color personalizado con opacidad */
+    margin-top: 30px;
 }
-/* Media Queries para pantallas muy pequeñas (teléfonos) */
-@media (max-width: 280px) {
-    .textsol {
-        font-size: 12px; /* Reduce el tamaño del texto aún más */
-        top: 50px; /* Ajusta la posición del texto */
-        right: 55%;
-    }
-    .solimg {
-        width: 50%;
-        top: 100px;
-        right: 30%;
-    }
-    
-    .plantasol {
-        width: 35px; /* Reduce el tamaño de la imagen */
-        top: 110px; /* Ajusta la posición de la imagen */
-        right: 40px;
-    }
-    .plantasemisol{
-        width: 35px; /* Reduce el tamaño de la imagen */
-        top: 165px; /* Ajusta la posición de la imagen */
-        right: 45px;
 
-    }
-    .plantassinsol{
-        width: 35px; /* Reduce el tamaño de la imagen */
-        top: 220px; /* Ajusta la posición de la imagen */
-        right: 65px;
-
-    }
-    
-    .textplantasol {
-        font-size: 6px; /* Reduce el tamaño del texto */
-        top: 95px; /* Ajusta la posición del texto */
-        right: 20%;
-    }
-    .textplantasemi{
-        font-size: 6px; /* Reduce el tamaño del texto */
-        top: 155px; /* Ajusta la posición del texto */
-        right: 0%;
-
-    }
-    .textplantasombra{
-        font-size: 6px; /* Reduce el tamaño del texto */
-        top: 210px; /* Ajusta la posición del texto */
-        right: 10%;
-
-    }
+.bg-exposicion, .bg-simbologia, .bg-list{
+    transition: transform 0.3s ease-in-out; /* Transición suave */
 }
+/* Animación de zoom al pasar el cursor (hover) o tocar en dispositivos móviles */
+.bg-exposicion:hover,
+.bg-exposicion:active {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al 105% */
+}
+/* Animación de zoom al pasar el cursor (hover) o tocar en dispositivos móviles */
+.bg-simbologia:hover,
+.bg-simbologia:active {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al 105% */
+}
+/* Animación de zoom al pasar el cursor (hover) o tocar en dispositivos móviles */
+.bg-list:hover,
+.bg-list:active {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al 105% */
+}
+
+
+
+

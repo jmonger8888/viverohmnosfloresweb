@@ -9,7 +9,7 @@
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
-    margin-top: 400px;
+    margin-top: 20px;
 }
 
 /* Estilo para el contenido del footer */
@@ -32,4 +32,62 @@
     font-size: 14px;
     color: #333; /* Cambia el color del texto según tu preferencia */
     margin: 0;
+}
+
+/* Estilo compartido para ambos contenedores */
+.container-custom {
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px; 
+    flex-direction: column; /* Asegura que el contenido se organice en una columna */
+    color: white; /* Asegura que el texto sea visible en ambos contenedores */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 1;
+}
+.container-custom:hover,
+.container-custom:active{
+    opacity: 0.8;/* Aumenta el tamaño de la imagen al 110% y la rota ligeramente */
+    transform: scale(1.1); 
+}
+/* Estilo para el contenedor izquierdo */
+.left-container {
+    background-color: rgba(67, 148, 99, 0.8);; /* D89F12 con opacidad 80% */
+}
+
+/* Estilo para las imágenes dentro del contenedor central */
+.center-container img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.center-container img:hover,
+.center-container img:active {
+    opacity: 0.8;/* Aumenta el tamaño de la imagen al 110% y la rota ligeramente */
+    transform: scale(1.1);
+}
+
+
+/* Estilo para el contenedor derecho */
+.right-container {
+    background-color: rgba(130, 43, 43, 0.7); /* 822B2B con opacidad 80% */
+}
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .left-container,
+    .center-container,
+    .right-container {
+        margin-bottom: 20px; /* Agrega espacio entre los contenedores en dispositivos móviles */
+        padding: 15px; /* Ajusta el relleno para pantallas pequeñas */
+    }
+
+    .center-container img {
+        margin-bottom: 10px; /* Reduce el espacio entre las imágenes en pantallas pequeñas */
+    }
 }
