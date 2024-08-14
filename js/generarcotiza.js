@@ -18,7 +18,7 @@ function enviarCotizacionWhatsApp() {
         mensaje += `- ${producto.nombreProducto}: ${producto.cantidad} unidades\n`;
     });
 
-    const numeroWhatsApp = "71975771"; // Reemplaza con el número de teléfono del vivero (con el código del país incluido)
+    const numeroWhatsApp = "71975771";
     const enlace = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
     window.open(enlace, '_blank');
