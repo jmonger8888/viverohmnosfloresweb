@@ -1,9 +1,84 @@
-#navinicio{
+/* Colores personalizados para los contenedores */
+.bg-container-1 {
+    background-color: rgba(166, 66, 66, 0.5); /* Color relacionado al original */
+    min-height: 250px; /* Altura mínima en lugar de altura fija */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; /* Añadir padding interno */
+}
+
+.bg-container-2 {
+    background-color: rgba(93, 167, 137, 0.5); /* Color relacionado al original */
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.bg-container-3 {
+    background-color: rgba(241, 181, 51, 0.5); /* Color relacionado al original */
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.bg-container-4 {
+    background-color: rgba(228, 138, 45, 0.5); /* Color relacionado al original */
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.bg-container-5 {
+    background-color: rgba(45, 104, 127, 0.5); /* Color relacionado al original */
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.bg-container-1, .bg-container-2, .bg-container-3, .bg-container-4, .bg-container-5 {
+    transition: transform 0.3s ease-in-out;
+}
+.bg-container-1:hover, .bg-container-2:hover, .bg-container-3:hover, 
+.bg-container-4:hover, .bg-container-5:hover,
+.bg-container-1:active, .bg-container-2:active, .bg-container-3:active, 
+.bg-container-4:active, .bg-container-5:active {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+
+/* Flexbox para el row y columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Asegura espacio entre los elementos */
+}
+
+.col-md-4, .col-md-6 {
+    display: flex;
+    align-items: stretch; /* Asegura que las columnas se estiren uniformemente */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 767px) {
+    .col-md-4, .col-md-6 {
+        flex: 1 1 100%; /* Los contenedores ocuparán el 100% del ancho de la fila en pantallas pequeñas */
+        margin-bottom: 20px; /* Espacio inferior entre los contenedores en pantallas pequeñas */
+    }
+}
+
+/* Estilos para el navbar */
+#navinicio {
     background-color: rgba(216, 159, 18, 0.75)!important; /* Color con opacidad */
 }
 
-/*estilos para parfe de abajo de la hoja*/
-/* Estilo para el contenedor del footer */
+/* Estilos para el footer */
 .footer {
     width: 100%;
     background-color: rgba(67, 148, 99, 0.50); /* Cambia el color de fondo según tu preferencia */
@@ -13,7 +88,6 @@
     margin-top: 20px;
 }
 
-/* Estilo para el contenido del footer */
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -21,47 +95,37 @@
     justify-content: center;
 }
 
-/* Estilo para el logo del footer */
 #footerlogo {
     max-width: 140px; /* Ajusta el tamaño máximo del logo */
     height: auto;
     margin-bottom: 10px; /* Espacio entre el logo y el texto */
 }
 
-/* Estilo para el texto del footer */
 .footer-text {
     font-size: 14px;
     color: #333; /* Cambia el color del texto según tu preferencia */
     margin: 0;
 }
 
-/* Colores personalizados para los contenedores */
-.bg-container-1 {
-    background-color: #D89F12; /* Color para el primer contenedor */
-    height: 350px;
-  }
-  
-  .bg-container-2 {
-    background-color: #439463; /* Color para el segundo contenedor */
-    height: 350px;
-  }
-  
-  .bg-container-3 {
-    background-color: #822B2B; /* Color para el tercer contenedor */
-    height: 350px;
-  }
-  
-  .bg-container-4 {
-    background-color: #6A7FDB; /* Color para el cuarto contenedor */
-    height: 350px;
-  }
-  
-  .bg-container-5 {
-    background-color: #5D3A9B; /* Color para el quinto contenedor */
-    height: 350px;
-  }
+h1 {
+    text-align: center; /* Centrar el texto */
+    font-style: italic; /* Aplicar cursiva */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Fuente de estilo cursiva clásica */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+h3{
+    text-align: center; /* Centrar el texto */
+    font-style: italic; /* Aplicar cursiva */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Fuente de estilo cursiva clásica */
+    margin-bottom: 20px; /* Espacio inferior */  
+}
+.justify {
+    text-align: justify;
+}
+
+
 
 
   
-  /* Añade estilos adicionales si es necesario */
+
   

@@ -91,3 +91,7 @@
         margin-bottom: 10px; /* Reduce el espacio entre las imágenes en pantallas pequeñas */
     }
 }
+h2 {
+    font-style: italic;  /* Aplicar cursiva */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Fuente de estilo cursiva clásica */
+}

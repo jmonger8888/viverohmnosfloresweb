@@ -63,3 +63,8 @@
     border-color: #D89F12; /* Bordes en el mismo color */
     color: white; /* Color del texto */
 }
+h1 {
+    text-align: center; /* Centrará el texto */
+    font-style: italic; /* Aplicará cursiva */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Fuente de estilo cursiva clásica */
+}

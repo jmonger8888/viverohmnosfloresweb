@@ -33,3 +33,48 @@
     color: #333; /* Cambia el color del texto según tu preferencia */
     margin: 0;
 }
+
+.bg-custom {
+    background-color: rgba(45, 104, 127, 0.8); /* Color morado suave */
+    color: white; /* Color de texto blanco para buen contraste */
+}
+
+.phone-text {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.email-text {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.whatsapp-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.p-3 {
+    padding: 1rem; /* Ajuste del padding interno */
+}
+
+.text-white {
+    color: white;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+

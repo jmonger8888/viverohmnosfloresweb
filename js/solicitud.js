@@ -11,7 +11,7 @@ document.getElementById('formsoli').addEventListener('submit', function(event) {
     const mensaje = `Hola, soy ${nombreCompleto}.%0A%0A*Correo Electrónico:* ${correo}%0A*Teléfono:* ${telefono}%0A%0A*Solicitud:* ${solicitud}`;
 
     // Número de WhatsApp del vivero (reemplaza con el número real)
-    const numeroVivero = "50670178103"; // Asegúrate de usar el formato adecuado: código de país sin + y el número
+    const numeroVivero = "71975771"; // Asegúrate de usar el formato adecuado: código de país sin + y el número
 
     // Crea la URL de WhatsApp
     const url = `https://wa.me/${numeroVivero}?text=${mensaje}`;
